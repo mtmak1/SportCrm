@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Добавить";
+}
+
+
+
+<form method="post">
+
+    <h1>Введите следующую информацию</h1>
+
+    <!-- Set via HTML -->
+
+    <label>Фамилия</label>
+    <input type="text" class="form-control" name="surname" value="" placeholder="Введите фамилию" pattern="[A-Za-zA-]" /><br />
+    <label>Имя</label>
+    <input type="text" class="form-control" name="name" value="" /><br />
+    <label>Дата рождения</label>
+    <input type="date" class="form-control" name="dateBirthday" value="" /><br />
+    <h2>Домашний адрес</h2>
+    <label>Улица</label>
+    <input type="text" class="form-control" name="homeAdress" value="" /><br />
+    <label>Дом</label>
+    <input type="number" class="form-control" name="home" value="" /><br />
+    <label>Квартира</label>
+    <input type="number" class="form-control" name="apartment" value="" /><br />
+    <label>Паспортные данные</label>
+    <input  type="text" class="form-control" name="passportData" value="" /><br />
+    <input type="submit" class="btn btn-primary" value="Отправить" />
+
+</form>
+
+<script>
+  
+
+
+    $(document).ready(function () {
+       
+        $("input[name=passportData]").mask("9999 999999");
+        $("input[name=name]".keyup(function (event) {
+            let regularExpName = '';
+            if (name.value == '') {
+                regularExpName = /[А-Я]/;
+            }
+            else {
+
+            }
+            let regularExpName = "[A-Z]";
+                regularExpName.exec(event.)
+            if (Char){
+            event.preventDefault();
+        }
+
+
+    });
+</script>
